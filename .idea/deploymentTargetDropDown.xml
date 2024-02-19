@@ -8,6 +8,25 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="deleteGoal_returnsTrue()">
+        <State />
+      </entry>
+      <entry key="insertGoal_returnsTrue()">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\agrea\.android\avd\Pixel_5_API_34.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-02-19T15:42:06.509874700Z" />
+        </State>
+      </entry>
       <entry key="useAppContext()">
         <State />
       </entry>

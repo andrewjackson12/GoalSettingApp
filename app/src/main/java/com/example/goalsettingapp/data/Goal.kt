@@ -7,14 +7,15 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class Goal (
-    private val title: String,
-    private val description: String,
+    val title: String,
+    val description: String,
 
-    //ToDo: come back to see if making date nullable is valid for when the user chooses a date or continuous goal
-    private val dateDue: Date?,
+    //ToDo: Not sure if Date object is the best here, will have to see
+    //Using type converter since Room can't save Date objects
+    val dateDue: Date?,
 
     //ToDo: Not sure if checkInFreq should be a string, could also be an int id sort of thing
-    private val checkInFreq: String,
+    val checkInFreq: String,
 
     //Primary key id generated automatically by room
     @PrimaryKey val id: Int? = null

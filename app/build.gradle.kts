@@ -88,4 +88,13 @@ dependencies {
 
     // Kotlin Extensions and Coroutines support for Room
     implementation("androidx.room:room-ktx:2.6.1")
+
+    // Test dependencies
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.arch.core:core-testing:2.1.0")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+    androidTestImplementation("androidx.test:runner:1.4.0")
+    androidTestImplementation("androidx.test:rules:1.4.0")    //implementation("androidx.test:core-ktx:1.4.0")
+    //implementation("androidx.arch.core:core-testing:2.1.0")
+
 }

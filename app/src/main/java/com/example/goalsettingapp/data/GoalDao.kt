@@ -1,11 +1,11 @@
 package com.example.goalsettingapp.data
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import kotlinx.coroutines.flow.Flow
 
 //Data access object for goal object - defines how to access data
 @Dao
@@ -24,7 +24,7 @@ interface GoalDao {
 
     //Getting all goals in a Flow
     @Query("SELECT * FROM goal")
-    fun getGoals(): Flow<List<Goal>>
+    fun getGoals(): LiveData<List<Goal>>
 
 
 }
